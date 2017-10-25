@@ -79,7 +79,6 @@ RUN set -ex \
 	&& dpkg-query --show --showformat '${package}\n' \
 		| grep -P '^libreadline\d+$' \
 		| xargs apt-mark manual \
-	&& apt-get purge -y --auto-remove $buildDeps \
 	&& cd / \
 	&& rm -r /usr/src/ruby \
 	\
