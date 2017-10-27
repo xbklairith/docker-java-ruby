@@ -1,4 +1,4 @@
-FROM library/java:8-jdk
+FROM library/java:9-jdk
 
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
